@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace RobotManagmentApi.Models
+{
+   
+    public class EmailModel
+    {
+        public string To { get; set; }
+        public string Subject { get; set; }
+        public string Content { get; set; }
+        public string Body { get; internal set; }
+
+        public EmailModel(string to,string subject,string content)
+        {
+            To = to;
+            Subject = subject;
+            Content = content;
+        }
+    }
+}
